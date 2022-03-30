@@ -1,17 +1,20 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System;
 
-namespace MyApp // Note: actual namespace depends on the project name.
+namespace Delegates // Note: actual namespace depends on the project name.
 {
-    internal static partial class Program
-    {
-        static void Main(string[] args)
+        public class Photo
         {
+            public static Photo Load(string path)
+            {
+                return new Photo();
+            }
 
-          
+            public void Save()
+            {
 
+            }
         }
-    }
+  
 }
 
 
