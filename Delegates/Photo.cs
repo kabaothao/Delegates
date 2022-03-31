@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 namespace Delegates // Note: actual namespace depends on the project name.
-{
+    {
         public class Photo
         {
             public static Photo Load(string path)
@@ -15,7 +15,7 @@ namespace Delegates // Note: actual namespace depends on the project name.
             }
         }
   
-}
+    }
 
 
 /*

@@ -8,28 +8,15 @@ namespace Delegates // Note: actual namespace depends on the project name.
         {
             Console.WriteLine("Apply brightness");
         }
-
         public void ApplyContrast(Photo photo)
         {
             Console.WriteLine("Apply contrast");
         }
-
         public void Resize(Photo photo)
         {
             Console.WriteLine("Resize photo");
         }
-
-
-
-
-
     }
-
-
-
-
-
-    
 }
 
 
