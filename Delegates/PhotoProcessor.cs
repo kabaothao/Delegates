@@ -4,18 +4,21 @@ namespace Delegates // Note: actual namespace depends on the project name.
 {
         public class PhotoProcessor
         {
-            public void Process(string path)
+            public delegate void PhotoFilterHandler(Photo photo);
+            public void Process(string path, PhotoFilterHandler filterHandler)
             {
                 var photo = Photo.Load(path);
 
-                var filters = new PhotoFilters();
-                filters.ApplyBrightness(photo);
-                filters.ApplyContrast(photo);
-                filters.Resize(photo);
+                 filterHandler(photo);
+
+                //var filters = new PhotoFilters();
+                //filters.ApplyBrightness(photo);
+                //filters.ApplyContrast(photo);
+                //filters.Resize(photo);
 
                 photo.Save();
             }
-        } 
+        }
 }
 
 
